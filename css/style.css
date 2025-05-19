@@ -97,6 +97,30 @@ h3{
     font-size: 2rem;
 }
 
+/* Navegacion */
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    /* gap:2rem;  Una forma de separacion esta es mas eficiente*/
+}
+
+.navegacion__enlace{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-right: 2rem; 
+}
+
+.navegacion__enlace:last-of-type{ 
+    margin-right: 0;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--secundario);
+}
 
 /* Grid */
 .grid{
@@ -112,7 +136,7 @@ h3{
         gap: 2rem;
     }
 
-    .grid > :first-child {
+    .pagina-inicio .grid > :first-child {
         grid-column: 1 / -1;
     }
 }
@@ -131,7 +155,7 @@ h3{
     transition: background-color 0.3s ease;
 }
 
-.boton:first-child{
+.pagina-inicio .boton:first-child{
     font-size: 2.5rem;
     border-radius: 0;
 }
