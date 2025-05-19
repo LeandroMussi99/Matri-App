@@ -119,7 +119,7 @@ h3{
 
 .navegacion__enlace--activo,
 .navegacion__enlace:hover{
-    color: var(--secundario);
+    color: var(--primario);
 }
 
 /* Grid */
