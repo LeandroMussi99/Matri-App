@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="pagina-inicio">
+    <header class="header__login">
+        <a href="login.html">
+            <img class="header__logo--login" src="img/logo1.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <main class="login">
+        <h1 class="login__titulo">Iniciar Sesión</h1>
+        <form class="formulario">
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Tu Email">
+            </div>
+            <div class="campo">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Tu Contraseña">
+            </div>
+
+            <input class="boton-login" type="submit" value="Ingresar">
+
+            <div class="formulario__acciones">
+                <a href="#" class="formulario__enlace">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <p class="formulario__registro">¿No tenés cuenta?
+                <a href="registro.html" class="formulario__enlace--azul">Registrate</a>
+            </p>
+        </form>
+    </main>
+
+    <footer class="footer__login">
+        <p class="footer__texto--login"> MatriApp - Todos los derechos Reservados 2025.</ma>
+    </footer>
+
+</body>
+
+</html>

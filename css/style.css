@@ -26,7 +26,7 @@ body{
         display: flex;
         flex-direction: column;
         height: 100%;
-        background-color: var(--primario);
+        background: linear-gradient(to bottom, #38b6ff 0%, #1180c7 100%);
         font-size: 1.6rem;
         line-height: 1.5;
 }
@@ -132,13 +132,13 @@ h3{
 @media (min-width: 768px) {
     .grid{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 2rem;
     }
 
-    .pagina-inicio .grid > :first-child {
+    /* .pagina-inicio .grid > :first-child {
         grid-column: 1 / -1;
-    }
+    } */
 }
 
 .boton {
@@ -155,12 +155,137 @@ h3{
     transition: background-color 0.3s ease;
 }
 
-.pagina-inicio .boton:first-child{
+.boton i {
+    margin-right: 8px;
+    font-size: 2rem;
+    color: var(--primarioOscuro);
+}
+
+/* .pagina-inicio .boton:first-child{
     font-size: 2.5rem;
     border-radius: 0;
-}
+} */
 .boton:hover {
     background-color: var(--secundario);
 }
 
+/* LOGIN */
+.login {
+    padding: 2rem;
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.login__titulo {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+}
+
+.formulario {
+    background-color: var(--secundario);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 40rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.formulario__acciones {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.formulario__enlace {
+    color: var(--negro);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.formulario__enlace:hover {
+    text-decoration: underline;
+}
+
+.formulario__registro {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--negro);
+}
+
+.formulario__enlace--azul {
+    color: var(--primarioOscuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formulario__enlace--azul:hover {
+    text-decoration: underline;
+}
+
+
+.campo {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--negro);
+}
+
+.campo input {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.boton-login {
+    width: 100%;
+    background-color: var(--primarioOscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-login:hover {
+    background-color: var(--primario);
+}
+
+a.boton-login {
+    display: block;
+    text-align: center;
+}
+
+.header__login{
+    display: flex;
+    justify-content: center;
+    background-color: var(--negro);
+}
+.header__logo--login{
+    margin: 1rem 0; /* primer valor: margen arriba y abajo segundo valor: izq,der en este caso 0 */
+    width: 20rem;  
+    height: auto;  
+}
+
+.footer__login{
+    background-color: var(--negro);
+    margin-top: 0rem;
+}
+.footer__texto--login{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 1.5rem;
+}
